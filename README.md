@@ -1,26 +1,17 @@
-# SilverBullet plug template
-Insert your plug description here. 
+# SilverBullet plug to sync tasks with a CalDAV server
 
-## Development preparation
-1. In your (development) space, create a folder under `Library/` that you can use as a namespace, for instance using your Github username:
+Sync Tasks from SilverBullet to a CalDav server.
+
+## Local Development
+1. In your (development) space, create a namespace folder under `Library/`:
 ```bash
-mkdir -p ~/myspace/Library/you
+mkdir -p ~/myspace/Library/Dobli
 ```
 
-2. Symlink this plug's folder into your namespaced folder:
+2. Symlink this plug's folder into the namespaced folder:
 
 ```bash
-ln -s $PWD ~/myspace/Library/you/hello
-```
-
-3. Update the `name` attribute in `PLUG.md` to match the location of that PLUG file in your space, and the file name of the destination `.plug.js` file as well e.g.
-```
----
-name: Library/you/hello/PLUG
-tags: meta/library
-files:
-- myplug.plug.js
----
+ln -s $PWD ~/myspace/Library/Dobli/silverbullet-caldav
 ```
 
 ## Build
@@ -34,5 +25,5 @@ npm run build
 Within ~20s SilverBullet will automatically sync your plug code, just watch your browser's JavaScript console to see when this happens. Then run the `Plugs: Reload` command to reload and reactivate the plug (no reload required).
 
 ## Distribution
-1. Commit the compiled `.plug.js` file to the repository
-2. Other people can now install your plug via the `Library: Install` command using the URL to your PLUG.md file as URI, e.g. `https://github.com/silverbulletmd/silverbullet-plug-template/blob/main/PLUG.md`
+1. Commit the compiled `caldav.plug.js` file to the repository
+2. Other people can now install this plug via the `Library: Install` command using the URL to your PLUG.md file as URI, e.g. `https://github.com/Dobli/silverbullet-caldav/blob/main/PLUG.md`

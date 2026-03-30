@@ -1,0 +1,6 @@
+name: caldav
+functions:
+  syncTasks:
+    path: caldav.ts:syncTasks
+    command:
+      name: "Sync tasks"

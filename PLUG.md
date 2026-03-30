@@ -1,7 +1,7 @@
 ---
-name: Library/you/hello/PLUG
+name: Library/Dobli/silverbullet-caldav
 tags: meta/library
 files:
-- hello.plug.js
+- caldav.plug.js
 ---
-This library does A, B and C.
+This library enables a sync from SilverBullet to CalDAV
